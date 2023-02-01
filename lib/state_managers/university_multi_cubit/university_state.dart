@@ -1,4 +1,4 @@
-import 'package:fifth_exam/data/models/university_model.dart';
+import 'package:fifth_exam/data/models/university_model/university_model.dart';
 
 abstract class UniverMultiState {}
 
