@@ -49,11 +49,11 @@ class _TabBoxScreenState extends State<TabBoxScreen> {
           },
           type: BottomNavigationBarType.fixed,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.password), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "A"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "B"),
+            BottomNavigationBarItem(icon: Icon(Icons.password), label: "C"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.notification_add), label: ""),
+                icon: Icon(Icons.notification_add), label: "D"),
           ],
         ),
       ),
