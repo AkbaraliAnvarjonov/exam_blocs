@@ -1,5 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:fifth_exam/screens/no_connectivity_screen/no_connectivity.dart';
+import 'package:fifth_exam/screens/tab_box/tabs/notification_screen/notification_screen.dart';
 import 'package:fifth_exam/screens/tab_box/tabs/university_multi_screen.dart';
 import 'package:fifth_exam/screens/tab_box/tabs/university_single_screen.dart';
 import 'package:fifth_exam/state_managers/connectivity/connectivity_cubit.dart';
@@ -15,9 +16,10 @@ class TabBoxScreen extends StatefulWidget {
 }
 
 class _TabBoxScreenState extends State<TabBoxScreen> {
-    _init() async {
+  _init() async {
     print("INTERNET TURNED ON CALL ANY API");
   }
+
   int currentPage = 0;
   @override
   Widget build(BuildContext context) {
@@ -25,11 +27,11 @@ class _TabBoxScreenState extends State<TabBoxScreen> {
       const UniversitySingleScreen(),
       const UniversityMultiScreen(),
       Container(),
-      Container(),
+      const NotificationScreen(),
     ];
     return BlocListener<ConnectivityCubit, ConnectivityState>(
       listener: (context, state) {
-        if (state.connectivityResult == ConnectivityResult.none ) {
+        if (state.connectivityResult == ConnectivityResult.none) {
           Navigator.push(
               context,
               MaterialPageRoute(

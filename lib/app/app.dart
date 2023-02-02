@@ -1,7 +1,5 @@
 import 'package:fifth_exam/screens/tab_box/tab_box.dart';
-import 'package:fifth_exam/screens/tab_box/tabs/university_single_screen.dart';
 import 'package:fifth_exam/state_managers/connectivity/connectivity_cubit.dart';
-import 'package:fifth_exam/state_managers/university_multi_cubit/university_cubit.dart';
 import 'package:fifth_exam/state_managers/university_single_cubit/university_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

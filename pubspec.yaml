@@ -43,6 +43,7 @@ dependencies:
   firebase_messaging: ^14.1.4
   firebase_core: ^2.3.0
   firebase_storage: ^11.0.6
+  sqflite: ^2.2.4+1
 
 dev_dependencies:
   flutter_test:
